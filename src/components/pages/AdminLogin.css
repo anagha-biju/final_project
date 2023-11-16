@@ -1,17 +1,8 @@
-/* .entire-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 50px;
-    height: 100%;
-    text-align: center;
-} */
-
 .container-right{
     display: flex;
     flex-direction: column;
     margin: auto;
-    /* margin-top: 20px; */
+    /* margin-top: 50px; */
     width: 600px;
     background: #fff;
     padding-bottom: 30px;
@@ -34,7 +25,7 @@
     color: #3c009d;
     font-size: 48px;
     font-weight: 700;
-    margin-top: 50px;
+    margin-top: 120px;
     margin-bottom: 20px;
 }
 
@@ -77,19 +68,6 @@
     font-size: 19px;
 }
 
-.forgot-password{
-    padding-left: 60px;
-    margin-top: 27px;
-    margin-left: 590px;
-    color: black;
-    font-size: 20px;
-}
-
-.forgot-password span{
-    color: #4c00b4;
-    cursor: pointer;
-}
-
 .submit-container{
     display: flex;
     gap: 30px;
@@ -114,18 +92,19 @@
     color: #676767;
 }
 
-.Admin{
-    margin-left: 1200px;
-    margin-right: 120px;
-    margin-top: -80px;
-    border-radius: 30px;
-    background-color: #4c00b4;
-    color: lightgray;
-    padding: 20px;
-}
-
-.Admin span{
-    color: white;
+.login-button{
+    width: 200px;
+    height: 59px;
+    color: #fff;
+    background: #4c00b4;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
     cursor: pointer;
+    /* justify-content: center;
+    align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }

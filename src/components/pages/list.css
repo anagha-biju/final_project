@@ -6,7 +6,8 @@
   
   .listWrapper {
     width: 100%;
-    max-width: 1024px;
+    /* max-width: 1024px; */
+    max-width: 1300px;
     display: flex;
     gap: 20px;
   }
@@ -14,9 +15,10 @@
   .listSearch {
     flex: 1;
     background-color: lightgray;
-    padding: 10px;
+    padding: 40px;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 0px;
+    /* margin-left: 50px; */
     position: sticky;
     top: 100px;
     height: max-content;
@@ -26,7 +28,7 @@
   .lsTitle{
     font-size: 30px;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   /* .lsTitle>label{
@@ -37,7 +39,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: black;
   }
   
@@ -101,4 +103,6 @@
   
   .listResult {
     flex: 3;
+    margin-left: 40px;
+    margin-right: 40px;
   }

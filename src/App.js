@@ -8,6 +8,8 @@ import Products from './components/pages/Help';
 import LoginSignup from './components/pages/Signup';
 import List from './components/pages/List';
 import Hotel from './components/pages/Hotel';
+import AdminLogin from './components/pages/AdminLogin';
+import AddHotel from './components/pages/AdminAddHotel';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           {/* <Route path='/services' element={<List/>} /> */}
           <Route path='/hotels/:id' element={<Hotel/>} />
           <Route path='/sign-up' element={<LoginSignup/>} />
+          <Route path='/admin' element={<AdminLogin/>} />
+          <Route path='/add-hotel-ADMIN' element={<AddHotel/>} />
         </Routes>
       </Router>
     </>

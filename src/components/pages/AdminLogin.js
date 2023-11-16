@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Signup.css'
+import './AdminLogin.css'
 import {useNavigate} from "react-router-dom";
 
 import user_icon from '../assets/person.png'
@@ -10,38 +10,35 @@ import password_icon from '../assets/password.png'
 const LoginSignup = () => {
     const navigate=useNavigate()
 
-    const [action,setAction] = useState("Sign Up");
-    const handleAdmin=()=>{
-      navigate("/admin",{})
+    // const [action,setAction] = useState("Sign Up");
+    const AdminRedirect=()=>{
+      navigate("/add-hotel-ADMIN",{})
     }
   return (
         <div className='container-right'>
           <div className="header">
-            <div className="text">{action}</div>
+            {/* <div className="text">{action}</div> */}
+            <div className="text">Admin Login</div>
             <div className="underline"></div>
           </div>
           <div className="inputs">
             <div className="input">
             <img src={user_icon} alt="" />
-            <input type="text" placeholder="Username" />
+            <input type="text" placeholder="Admin Username" />
             </div>
          
-            {action==="Login"?<div></div>: <div className="input">
-            <img src={email_icon} alt="" />
-            <input type="email" placeholder="Email Id" />
-            </div>}
             <div className="input">
             <img src={password_icon} alt="" />
             <input type="password" placeholder="Password" />
             </div>
             </div>
-            {action==="Sign Up"?<div></div>:<div className="forgot-password">Lost Password? <span>Click here!</span></div>}
+            {/* {action==="Sign Up"?<div></div>:<div className="forgot-password">Lost Password? <span>Click here!</span></div>} */}
             
             <div className="submit-container">
-                <div className={action==="Login"?"submit gray":"submit"} onClick={()=>{setAction("Sign Up")}}>Sign Up</div>
-                <div className={action==="Sign Up"?"submit gray":"submit"} onClick={()=>{setAction("Login")}}>Login</div>
+                {/* <div className={action==="Login"?"submit gray":"submit"} onClick={()=>{setAction("Sign Up")}}>Sign Up</div> */}
+                <div className='login-button' onClick={AdminRedirect}>Login</div>
             </div>
-            <div className='Admin'>Are you an Admin? <span onClick={handleAdmin}>Log in</span></div>
+            {/* <div className='Admin'>Are you an Admin? <span onClick={handleAdmin}>Log in</span></div> */}
         </div>
   )
 }
