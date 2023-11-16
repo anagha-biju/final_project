@@ -11,7 +11,7 @@
     height: 150vh;
 }
 
-.header{
+.top-header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@
     margin-bottom: 10px;
 }
 
-.underline{
+.heading-underline{
     width: 61px;
     height: 6px;
     background: #3c009d;
@@ -37,7 +37,7 @@
     margin-bottom: -30px;
 }
 
-.inputs{
+.all-inputs{
     margin-top: -130px;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@
     margin-bottom: 30px;
 }
 
-.input{
+.each-input{
     display: flex;
     align-items: center;
     margin: auto;
@@ -55,12 +55,12 @@
     border-radius: 6px;
 }
 
-.input img{
+.each-input img{
     margin: 0px 30px;
     height: 30px;
 }
 
-.input input{
+.each-input input{
     height: 50px;
     width: 400px;
     background: transparent;
