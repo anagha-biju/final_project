@@ -9,15 +9,21 @@ import city_icon from '../assets/buildings.png'
 import rating_icon from '../assets/review.png'
 import features_icon from '../assets/new-features.png'
 import distance_icon from '../assets/distance.png'
+import types_icon from '../assets/categories.png'
 
 const AddHotel=()=>{
     return(
-        <div className='container'>
+        <div className='top-container'>
           <div className="top-header">
             <div className="heading">Hotel Details</div>
             <div className="heading-underline"></div>
           </div>
           <div className="all-inputs">
+            <div className="each-input">
+            <img src={types_icon} alt="" />
+            <input type="text" placeholder="Type" />
+            </div>
+
             <div className="each-input">
             <img src={home_icon} alt="" />
             <input type="text" placeholder="Name of the hotel" />
@@ -41,7 +47,7 @@ const AddHotel=()=>{
             </div>
             <div className="each-input">
             <img src={rating_icon} alt="" />
-            <input type="number" placeholder="Rating" />
+            <input type="text" placeholder="Rating" />
             </div>
             <div className="each-input">
             <img src={features_icon} alt="" />

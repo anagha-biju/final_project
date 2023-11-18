@@ -5,7 +5,7 @@ const Featured = () => {
     <div className="Types">
       <h1>Select Based on Type</h1>
       <hr className="h"></hr>
-      <div className="container">
+      <div className="main-container">
         <div className="bg1">
             <h2>Resorts</h2>
         </div>
