@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import './AdminLogin.css'
 import {useNavigate} from "react-router-dom";
 
-import user_icon from '../assets/person.png'
-import email_icon from '../assets/email.png'
-import password_icon from '../assets/password.png'
+import user_icon from '../../assets/person.png'
+import email_icon from '../../assets/email.png'
+import password_icon from '../../assets/password.png'
 // import login_image from './assets/loginimage.jpg'
 
 const LoginSignup = () => {
@@ -12,7 +12,7 @@ const LoginSignup = () => {
 
     // const [action,setAction] = useState("Sign Up");
     const AdminRedirect=()=>{
-      navigate("/add-hotel-ADMIN",{})
+      navigate("/admin-options",{})
     }
   return (
         <div className='container-right'>

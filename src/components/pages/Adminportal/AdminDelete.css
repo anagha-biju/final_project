@@ -1,4 +1,4 @@
-.container-right{
+.main-container{
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -6,12 +6,12 @@
     width: 600px;
     background: #fff;
     padding-bottom: 30px;
-    background: url('../assets/background.jpg') center center/cover no-repeat;
+    background: url('../../assets/adminbg.jpg') center center/cover no-repeat;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
-.header{
+.main-header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,30 +21,32 @@
     margin-bottom: 50px;
 }
 
-.text{
+.heading{
     color: #3c009d;
     font-size: 48px;
     font-weight: 700;
-    margin-top: 120px;
-    margin-bottom: 20px;
+    margin-top: 90px;
+    margin-bottom: 10px;
 }
 
-.underline{
+.heading-underline{
     width: 61px;
     height: 6px;
     background: #3c009d;
     border-radius: 9px;
+    margin-bottom: 120px;
+    /* margin-bottom: -30px; */
 }
 
-.inputs{
-    /* margin-top: -260px; */
+.delete-inputs{
+    margin-top: -130px;
     display: flex;
     flex-direction: column;
     gap: 25px;
     margin-bottom: 30px;
 }
 
-.input{
+.each-input{
     display: flex;
     align-items: center;
     margin: auto;
@@ -54,11 +56,12 @@
     border-radius: 6px;
 }
 
-.input img{
+.each-input img{
     margin: 0px 30px;
+    height: 30px;
 }
 
-.input input{
+.each-input input{
     height: 50px;
     width: 400px;
     background: transparent;
@@ -92,7 +95,7 @@
     color: #676767;
 }
 
-.login-button{
+.delete-button{
     width: 200px;
     height: 59px;
     color: #fff;
@@ -101,10 +104,16 @@
     font-size: 19px;
     font-weight: 700;
     cursor: pointer;
-    /* justify-content: center;
-    align-items: center; */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin-top: -30px; */
+    /* margin-top: 10px; */
 
+}
+
+label{
+    text-align: center;
+    font-size: 30px;
+    color: black;
 }

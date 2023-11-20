@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 import './AdminAddHotel.css'
 import {useNavigate} from "react-router-dom";
-import home_icon from '../assets/home.png'
-import address_icon from '../assets/pin.png'
-import price_icon from '../assets/money.png'
-import desc_icon from '../assets/notes.png'
-import city_icon from '../assets/buildings.png'
-import rating_icon from '../assets/review.png'
-import features_icon from '../assets/new-features.png'
-import distance_icon from '../assets/distance.png'
-import types_icon from '../assets/categories.png'
+import home_icon from '../../assets/home.png'
+import address_icon from '../../assets/pin.png'
+import price_icon from '../../assets/money.png'
+import desc_icon from '../../assets/notes.png'
+import city_icon from '../../assets/buildings.png'
+import rating_icon from '../../assets/review.png'
+import features_icon from '../../assets/new-features.png'
+import distance_icon from '../../assets/distance.png'
+import types_icon from '../../assets/categories.png'
 
 const AddHotel=()=>{
     return(
         <div className='top-container'>
           <div className="top-header">
-            <div className="heading">Hotel Details</div>
+            <div className="heading">Add Hotel Details</div>
             <div className="heading-underline"></div>
           </div>
           <div className="all-inputs">
